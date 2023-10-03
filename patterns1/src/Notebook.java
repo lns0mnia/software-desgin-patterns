@@ -1,7 +1,9 @@
 public class Notebook {
     private static Notebook instance;
 
-    private Notebook() {}
+    private Notebook() {
+        //hidden code of creating single new inst
+    }
 
     public static Notebook getInstance() {
         if (instance == null) {
@@ -14,3 +16,5 @@ public class Notebook {
         System.out.println(message);
     }
 }
+
+//singleton pattern
